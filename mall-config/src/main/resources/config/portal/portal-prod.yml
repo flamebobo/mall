@@ -16,8 +16,8 @@ spring:
   rabbitmq:
     host: rabbit
     port: 5672
-    virtual-host: /mall
-    username: mall
-    password: mall
+    virtual-host: /
+    username: guest
+    password: guest
     publisher-confirms: true #如果对异步消息需要回调必须设置为true
 

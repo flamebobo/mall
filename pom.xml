@@ -35,7 +35,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <skipTests>true</skipTests>
-        <docker.host>http://192.168.6.132:2375</docker.host>
+        <docker.host>http://172.18.0.1:2375</docker.host>
         <docker.maven.plugin.version>1.1.0</docker.maven.plugin.version>
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
@@ -44,6 +44,7 @@
         <druid.version>1.1.10</druid.version>
         <hutool.version>4.5.7</hutool.version>
         <swagger2.version>2.7.0</swagger2.version>
+        <swagger-bootstrap-ui.version>1.9.2</swagger-bootstrap-ui.version>
         <mybatis-generator.version>1.3.7</mybatis-generator.version>
         <mybatis.version>3.4.6</mybatis.version>
         <mysql-connector.version>8.0.15</mysql-connector.version>
@@ -136,6 +137,12 @@
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger-ui</artifactId>
                 <version>${swagger2.version}</version>
+            </dependency>
+            <!-- 引入swagger-bootstrap-ui包 /doc.html-->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>swagger-bootstrap-ui</artifactId>
+                <version>${swagger-bootstrap-ui.version}</version>
             </dependency>
             <!-- MyBatis 生成器 -->
             <dependency>
